@@ -15,3 +15,11 @@ The insulting early bird is the only product on the market that can open your bl
 * Printer Cfg under `~/printer_data/config/printer.cfg
 * Follow [link](https://www.klipper3d.org/Installation.html) to install klipper firmware on skr.
   * [Extra skr e3 v3 instructions can be found in its config file](https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3/blob/master/firmware/V3.0/Klipper/SKR-mini-E3-V3.0-klipper.cfg)
+  * Can Use ttyACM0 as dev
+  * Use above skr mini e3 v3 cfg, but make temp ranges on extruder and heat bed like crazy ranges to avoid ADC range errors
+  * Added following to cfg
+
+```
+[force_move]
+enable_force_move: True
+```
