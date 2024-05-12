@@ -11,4 +11,7 @@ The insulting early bird is the only product on the market that can open your bl
 
 ## Install
 * PI lite OS
-* kauih to get Klipper, Mainsail, Mainsail
+* On pi use kauih to get Klipper, Mainsail, Mainsail
+* Printer Cfg under `~/printer_data/config/printer.cfg
+* Follow [link](https://www.klipper3d.org/Installation.html) to install klipper firmware on skr.
+  * [Extra skr e3 v3 instructions can be found in its config file](https://github.com/bigtreetech/BIGTREETECH-SKR-mini-E3/blob/master/firmware/V3.0/Klipper/SKR-mini-E3-V3.0-klipper.cfg)
