@@ -21,6 +21,7 @@ def update_menu():
 while 1:
     time.sleep(1)
     lcd.clear()
+    update_menu()
     for s in menu:
         pad = ' ' * (20 - len(s)) 
         lcd.write_string(s + pad)
