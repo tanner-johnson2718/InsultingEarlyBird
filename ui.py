@@ -13,7 +13,7 @@ def get_pos():
 def update_menu():
     c = datetime.now()
 
-    menu[0] = "Pos   ) " +  str(get_pos(0))
+    menu[0] = "Pos   ) " +  str(get_pos())
     menu[1] = "Time  ) " + c.strftime('%H:%M:%S')
     menu[2] = "Alarm ) " + "OFF"
     menu[3] = "State ) " + "OFF"
