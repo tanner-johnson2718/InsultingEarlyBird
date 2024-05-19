@@ -30,3 +30,4 @@ Here at insulting early bird we pride ourselves on the most powerful tech stach 
 [force_move]
 enable_force_move: True
 ```
+* [do this](https://medium.com/@thedyslexiccoder/how-to-set-up-a-raspberry-pi-4-with-lcd-display-uAing-i2c-backpack-189a0760ae15)
