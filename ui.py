@@ -1,11 +1,15 @@
 from RPLCD.i2c import CharLCD
 import time
 from datetime import datetime
+import os
 
 lcd = CharLCD(i2c_expander='PCF8574', address=0x27, port=1, cols=20, rows=4, dotsize=8)
 
 menu = ["Pos)   ", "Time)  ", "Alarm) ", "State) "]
 state= ["Pending", "Descending", "Ascending"]
+os.environ['TZ'] = 'America/Denver'
+time.tzset()
+
 
 def get_pos():
     return 0
