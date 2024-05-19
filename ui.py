@@ -10,8 +10,8 @@ states= ["Pending", "Descending", "Ascending"]
 os.environ['TZ'] = 'America/Denver'
 time.tzset()
 alarm = "05:30:00"
-pos_prev = 0
 pos = 0
+pos_prev = 0
 
 state_index = 0
 state=states[0]
@@ -42,9 +42,7 @@ def send_descend():
 def update():
     c = datetime.now()
     date_string = c.strftime('%H:%M:%S')
-    pos_prev = pos
-    pos_next = get_pos()
-    pos = pos_next
+    pos = get_pos()
 
     if state == states[0]:
         if rise_n_shine(date_string):
