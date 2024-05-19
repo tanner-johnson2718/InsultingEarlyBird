@@ -43,7 +43,8 @@ def update():
     c = datetime.now()
     date_string = c.strftime('%H:%M:%S')
     pos_prev = pos
-    pos = get_pos()
+    pos_next = get_pos()
+    pos = pos_next
 
     if state == states[0]:
         if rise_n_shine(date_string):
