@@ -11,6 +11,7 @@ os.environ['TZ'] = 'America/Denver'
 time.tzset()
 alarm = "05:30:00"
 pos_prev = 0
+pos = 0
 
 state_index = 0
 state=states[0]
@@ -69,9 +70,9 @@ def update():
     menu[3] = "State ) " + state
 
 while 1:
-    time.sleep(7)
     update()
     lcd.clear()
     for s in menu:
         pad = ' ' * (20 - len(s)) 
         lcd.write_string(s + pad)
+    time.sleep(7)
